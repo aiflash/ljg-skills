@@ -2,7 +2,7 @@
 name: ljg-paper
 description: "Paper reader for non-academics. Takes a paper and extracts its ideas for personal use. Focuses on understanding, not academic critique. Use when user shares an arxiv link, paper URL, PDF, or asks to analyze a research paper. Trigger words: '读论文', '分析论文', 'paper', or when user shares an academic paper."
 user_invocable: true
-version: "4.0.0"
+version: "4.1.0"
 ---
 
 # ljg-paper: 读论文
@@ -103,7 +103,21 @@ version: "4.0.0"
 
 说不出来就重读第三步。追问：这个洞见为什么不显然？它改变了哪个认知？
 
-### 5. 启发：对我的提醒
+### 5. 博导审稿
+
+换身份：这个方向上带了二十年研究生的博导。学生拿着论文来找你，你判断这东西值不值得认真对待。
+
+用白话说，像在办公室跟学生聊：
+
+- *选题眼光*：问题值不值得做？真缺口还是人造缺口？
+- *方法成熟度*：巧劲还是蛮力？有没有更自然的做法被忽略？
+- *实验诚意*：baseline 公不公道？消融到位没？数字经不经得起追问？
+- *写作功力*：最该说清楚的地方有没有偷懒？
+- *判决*：strong accept / weak accept / borderline / weak reject / strong reject，一句话理由
+
+好的说好，差的说差在哪儿。
+
+### 6. 启发：对我的提醒
 
 用三个视角试探连接，命中展开，没命中跳过，全没命中说「没有」：
 
@@ -111,7 +125,7 @@ version: "4.0.0"
 - *混搭*：论文的某个组件和我已有的东西组合能产生新东西吗？
 - *反转*：论文的做法和我的默认假设相反吗？照出了什么盲区？
 
-### 6. 过红线
+### 7. 过红线
 
 逐条扫红线。额外检查：
 
@@ -122,7 +136,7 @@ version: "4.0.0"
 
 列修改清单确认后生成文件。
 
-### 7. 生成 Org 文件
+### 8. 生成 Org 文件
 
 按 Denote 规范获取时间戳，读 `references/template.org`，写入 `~/Documents/notes/`。
 
@@ -131,4 +145,5 @@ version: "4.0.0"
 - *问题勾人*：让不懂的人也想知道答案
 - *外行能跟*：不懂这个领域的聪明人读完能复述核心思路
 - *洞见扎心*：一句「哦，原来……」，说不出就是没找到
+- *博导像博导*：有判断力有分寸，最后一句判决
 - *零割裂感*：读完像一个人在跟你说「我读了篇论文，发现了个有意思的事」
