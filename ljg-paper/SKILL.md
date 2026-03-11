@@ -2,7 +2,7 @@
 name: ljg-paper
 description: "Paper reader for non-academics. Takes a paper and extracts its ideas for personal use. Focuses on understanding, not academic critique. Use when user shares an arxiv link, paper URL, PDF, or asks to analyze a research paper. Trigger words: '读论文', '分析论文', 'paper', or when user shares an academic paper."
 user_invocable: true
-version: "4.1.0"
+version: "4.2.0"
 ---
 
 # ljg-paper: 读论文
@@ -96,13 +96,24 @@ version: "4.1.0"
 
 费曼翻译部分的子标题按内容需要组织，不必固定。
 
-### 4. 洞见：一个「哦，原来……」
+### 4. 核心概念：把术语变成直觉
+
+挑出论文中最关键的 1 至 3 个概念（方法名、架构组件、数学对象、新定义……），逐个拆解。
+
+每个概念：
+- *一句话*：这东西是什么，干什么用的
+- *类比或例子*：让没接触过的人秒懂
+- *为什么重要*：少了它论文的逻辑链断在哪里
+
+选概念的标准：读者如果不懂这个，后面的洞见和审稿就跟不上。已经在「翻译」里讲透的不重复选。
+
+### 5. 洞见：一个「哦，原来……」
 
 整篇论文真正改变认知的往往只有一个点。找到它，用一句话说清。
 
 说不出来就重读第三步。追问：这个洞见为什么不显然？它改变了哪个认知？
 
-### 5. 博导审稿
+### 6. 博导审稿
 
 换身份：这个方向上带了二十年研究生的博导。学生拿着论文来找你，你判断这东西值不值得认真对待。
 
@@ -116,7 +127,7 @@ version: "4.1.0"
 
 好的说好，差的说差在哪儿。
 
-### 6. 启发：对我的提醒
+### 7. 启发：对我的提醒
 
 用三个视角试探连接，命中展开，没命中跳过，全没命中说「没有」：
 
@@ -124,7 +135,7 @@ version: "4.1.0"
 - *混搭*：论文的某个组件和我已有的东西组合能产生新东西吗？
 - *反转*：论文的做法和我的默认假设相反吗？照出了什么盲区？
 
-### 7. 过红线
+### 8. 过红线
 
 逐条扫红线。额外检查：
 
@@ -135,7 +146,7 @@ version: "4.1.0"
 
 列修改清单确认后生成文件。
 
-### 8. 生成 Org 文件
+### 9. 生成 Org 文件
 
 按 Denote 规范获取时间戳，读 `references/template.org`，写入 `~/Documents/notes/`。
 
