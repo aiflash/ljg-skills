@@ -19,7 +19,7 @@ My custom skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-cod
 ### Via Marketplace (Recommended)
 
 ```
-/claude marketplace install ljg-skills
+/plugin marketplace add lijigang/ljg-skills
 ```
 
 ### Manual Install
